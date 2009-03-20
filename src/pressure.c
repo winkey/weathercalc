@@ -461,7 +461,7 @@ double KPAtoATM(
 double HPAtoINHG(
 	double HPA)
 {
-	double INHG = 0.295300 * HPA;
+	double INHG = 0.0295300 * HPA;
 
 	return  INHG;
 }
