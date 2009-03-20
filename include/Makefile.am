@@ -7,9 +7,11 @@ include_HEADERS = \
 	speed.h                  \
 	temp.h                  \
 	vp.h                  \
-	windchill.h 
+	windchill.h                  \
+	wind.h 
 
 ## File created by the gnome-build tools
+
 
 
 
