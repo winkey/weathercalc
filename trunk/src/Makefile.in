@@ -52,7 +52,7 @@ libLTLIBRARIES_INSTALL = $(INSTALL)
 LTLIBRARIES = $(lib_LTLIBRARIES)
 libweathercalc_la_LIBADD =
 am_libweathercalc_la_OBJECTS = temp.lo distance.lo speed.lo \
-	pressure.lo vp.lo mix.lo heatindex.lo windchill.lo
+	pressure.lo vp.lo mix.lo heatindex.lo windchill.lo wind.lo
 libweathercalc_la_OBJECTS = $(am_libweathercalc_la_OBJECTS)
 libweathercalc_la_LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
@@ -201,7 +201,8 @@ libweathercalc_la_SOURCES = \
 	vp.c             \
 	mix.c             \
 	heatindex.c             \
-	windchill.c 
+	windchill.c             \
+	wind.c 
 
 libweathercalc_la_LDFLAGS = \
 	-lm 
@@ -282,6 +283,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/speed.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/temp.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/vp.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/wind.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/windchill.Plo@am__quote@
 
 .c.o:

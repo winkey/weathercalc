@@ -22,10 +22,12 @@ libweathercalc_la_SOURCES = \
 	vp.c             \
 	mix.c             \
 	heatindex.c             \
-	windchill.c 
+	windchill.c             \
+	wind.c 
 
 libweathercalc_la_LDFLAGS = \
 	-lm 
+
 
 
 

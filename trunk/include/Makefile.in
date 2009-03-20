@@ -171,7 +171,8 @@ include_HEADERS = \
 	speed.h                  \
 	temp.h                  \
 	vp.h                  \
-	windchill.h 
+	windchill.h                  \
+	wind.h 
 
 all: all-am
 
