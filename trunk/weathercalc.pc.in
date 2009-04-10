@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: weathercalc
+Description: Library for misc weather related calculations.
+Version: @VERSION@
+Libs: -L${libdir} -lweathercalc
+Cflags: -I${includedir}

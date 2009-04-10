@@ -26,5 +26,5 @@ AC_OUTPUT([
 Makefile
 include/Makefile
 src/Makefile
-
+weathercalc.pc
 ])
